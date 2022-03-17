@@ -7,6 +7,7 @@ $black2: #495057;
 body{
     font-family: 'Yanone Kaffeesatz', sans-serif;
     color: $black2;
+    background: $primary;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -17,8 +18,71 @@ img{
     max-width: 100%;
 }
 
-// a{
-//     &:hover{ // cuando en un enlace esté en hover..
-//         text-decoration: none;
-//     }
-// }
+a:hover{
+    text-decoration: none;
+}
+
+// header
+
+header{
+    background: #fff;
+    padding: 10px 0; // 10 arriba y abajo, 0 en los costados
+    box-shadow: 0 5px 10px rega(204,204,204,0.31); // sombra: x, y, desenfoque, color (0.31: transparecia)
+
+    h1{
+        font-size: 24px;
+        font-weight: 600; // semibold
+        text-transform: uppercase; // todo mayúscula
+    }
+
+    .avatar-container{
+        width: 60px; // ancho
+        height: 60px; // alto
+        position: relative;
+        cursor: pointer; // para que se vea la manito al pasar por encima
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover; // para que no se distorsione
+            object-position: center;
+            border-radius: 50%; // para que se redondee
+        }
+
+        i{
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 20px;
+            color: $primary;
+        }
+
+    }
+
+    .profile-options-list{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        
+        li{
+            a{
+                display: block;
+                padding: 10px 0;
+                color: $black2;
+
+                i{
+                    display: inline-block;
+                    width: 18px;
+                    text-align: center;
+                    margin-right: 5px;
+                }
+    
+            }
+        }
+    }
+
+
+
+
+
+}
