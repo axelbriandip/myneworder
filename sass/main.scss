@@ -7,7 +7,6 @@ $black2: #495057;
 body{
     font-family: 'Yanone Kaffeesatz', sans-serif;
     color: $black2;
-    background: $primary;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -27,7 +26,7 @@ a:hover{
 header{
     background: #fff;
     padding: 10px 0; // 10 arriba y abajo, 0 en los costados
-    box-shadow: 0 5px 10px rega(204,204,204,0.31); // sombra: x, y, desenfoque, color (0.31: transparecia)
+    box-shadow: 0 5px 10px rgba(204,204,204,0.30); // sombra: x, y, desenfoque, color (0.31: transparecia)
 
     h1{
         font-size: 24px;
